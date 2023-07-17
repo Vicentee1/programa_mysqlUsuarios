@@ -17,6 +17,10 @@ ruta.get("/nuevoUsuario",(req,res)=>{
     res.render("nuevoUsuario");
 });
 
+ruta.get("/mostrarUsuario", (req,res) => {
+    res.render("mostrarUsuario");
+});
+
 ruta.post("/capturarUsuario", (req, res)=>{
 
     Usuario.create(req.body)
